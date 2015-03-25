@@ -15,18 +15,18 @@ rescue LoadError => err
 end
 
 # Load 'hirb'
-begin
-  require 'hirb'
+# begin
+#   require 'hirb'
 
-  Hirb.enable
+#   Hirb.enable
 
-  pry_print = Pry.config.print
+#   pry_print = Pry.config.print
 
-  Pry.config.print = proc do |*args|
-    Hirb::View.view_or_page_output(args[1]) || pry_print.call(*args)
-  end
-rescue LoadError => err
-end
+#   Pry.config.print = proc do |*args|
+#     Hirb::View.view_or_page_output(args[1]) || pry_print.call(*args)
+#   end
+# rescue LoadError => err
+# end
 
 # Launch Pry with access to the entire Rails stack
 rails = File.join(Dir.getwd, 'config', 'environment.rb')
@@ -75,7 +75,13 @@ if File.exist?(rails) && ENV['SKIP_RAILS'].nil?
   end
 
   # automatically call `reload` every time a new command is typed
-  Pry.hooks.add_hook(:before_eval, :reload_everything) { reload!(false) }
+  Pry.hooks.add_hook(:before_eval, :reload_everything) do 
+    reload!(false) 
+    if defined? FactoryGirl
+      FactoryGirl.factories.clear
+      FactoryGirl.find_definitions
+    end
+  end
 
   # sql for arbitrary SQL commands through the AR
   def sql(query)
