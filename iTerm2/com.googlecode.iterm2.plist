@@ -33,7 +33,7 @@
 	<key>DimBackgroundWindows</key>
 	<false/>
 	<key>DimInactiveSplitPanes</key>
-	<true/>
+	<false/>
 	<key>DimOnlyText</key>
 	<true/>
 	<key>DisableFullscreenTransparency</key>
@@ -82,8 +82,10 @@
 	<true/>
 	<key>MaxVertically</key>
 	<false/>
+	<key>NSFontPanelAttributes</key>
+	<string>1, 4</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Code/Dotfiles</string>
+	<string>~/Code/Dotfiles/iTerm2</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -116,19 +118,23 @@
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>1231 336 231 329 0 0 1920 1057 </string>
+	<key>NSWindow Frame NSFontPanel</key>
+	<string>-871 100 445 348 -1920 -59 1920 1177 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>-1011 345 924 485 -1920 -59 1920 1177 </string>
+	<string>-1450 432 924 485 -1920 -59 1920 1177 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>155 473 592 584 0 0 1920 1057 </string>
+	<key>NSWindow Frame com.apple.typography_panel_Monaco</key>
+	<string>560 695 260 88 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>3 6 1914 523 0 0 1920 1057 </string>
+	<string>3 1 1914 1055 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>3 556 650 501 0 0 1920 1057 </string>
+	<string>3 1 1914 1055 0 0 1920 1057 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
 			<key>ASCII Anti Aliased</key>
-			<true/>
+			<false/>
 			<key>AWDS Pane Directory</key>
 			<string></string>
 			<key>AWDS Pane Option</key>
@@ -657,11 +663,11 @@
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>Monaco 14</string>
+			<string>PTMono-Regular 18</string>
 			<key>Non-ASCII Anti Aliased</key>
-			<true/>
+			<false/>
 			<key>Normal Font</key>
-			<string>Monaco 14</string>
+			<string>PTMono-Regular 18</string>
 			<key>Option Key Sends</key>
 			<integer>1</integer>
 			<key>Prompt Before Closing 2</key>
@@ -819,7 +825,7 @@
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
-			<true/>
+			<false/>
 			<key>Use Bright Bold</key>
 			<true/>
 			<key>Use Canonical Parser</key>
@@ -836,6 +842,10 @@
 			<string>/Users/m.filippov</string>
 		</dict>
 	</array>
+	<key>NoSyncTimeOfLastPromo</key>
+	<real>453631852.25874197</real>
+	<key>NoSyncTimeOfLastPromoDownload</key>
+	<real>455209906.23048103</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -884,7 +894,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/m.filippov/Code/Dotfiles</string>
+	<string>/Users/m.filippov/Code/Dotfiles/iTerm2</string>
 	<key>PromptOnQuit</key>
 	<true/>
 	<key>QuitWhenAllWindowsClosed</key>
@@ -900,7 +910,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-04-27T08:59:52Z</date>
+	<date>2015-06-10T10:28:20Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -948,6 +958,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.0.0.20150412</string>
+	<string>2.1.1</string>
 </dict>
 </plist>
