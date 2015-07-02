@@ -65,9 +65,6 @@ set noswapfile
 
 set undofile
 set undolevels=500
-
-" Auto-open NERDTree on startup
-au VimEnter *  NERDTree
 " -----
 " /Options
 " -----
