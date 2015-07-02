@@ -31,6 +31,15 @@ let g:startify_bookmarks = [
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 let NERDTreeShowHidden=1
 let NERDTreeMinimalUI=1
+Plug 'kien/ctrlp.vim'
+let g:ctrlp_working_path_mode='c'
+let g:ctrlp_show_hidden=1
+let g:ctrlp_open_new_file='r'
+
+" Syntax
+Plug 'scrooloose/syntastic'
+Plug 'slim-template/vim-slim'
+Plug 'tpope/vim-rails'
 
 call plug#end()
 " -----
@@ -44,6 +53,18 @@ colorscheme gotham256
 set background=dark
 
 set cursorline
+
+set nu
+
+" Backup
+set nobackup
+set noswapfile
+
+set undofile
+set undolevels=500
+
+" Auto-open NERDTree on startup
+au VimEnter *  NERDTree
 " -----
 " /Options
 " -----
