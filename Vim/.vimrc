@@ -71,6 +71,8 @@ set laststatus=2 " Always show status line
 set expandtab
 set tabstop=2
 set shiftwidth=2
+
+set backspace=indent,eol,start
 " Backup
 set nobackup
 set noswapfile
