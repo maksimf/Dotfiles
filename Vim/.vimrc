@@ -42,8 +42,12 @@ Plug 'majutsushi/tagbar'
 
 " Syntax
 Plug 'scrooloose/syntastic'
+let g:syntastic_ruby_checkers = ['rubocop']
+
 Plug 'slim-template/vim-slim'
 Plug 'tpope/vim-rails'
+
+Plug 'bronson/vim-trailing-whitespace'
 
 call plug#end()
 " -----
@@ -80,5 +84,11 @@ set undolevels=500
 " -----
 " Key mappings
 " -----
+let mapleader=','
+
 map <F5> :NERDTreeToggle<cr>
 imap <F5> <Esc>:NERDTreeToggle<cr>
+
+map <leader>fw :FixWhitespace<cr>
+
+map <leader>sc :SyntasticCheck<cr>
