@@ -59,6 +59,7 @@ set cursorline
 
 set nu
 
+let NERDTreeIgnore = ['\.DS_Store$']
 " Backup
 set nobackup
 set noswapfile
