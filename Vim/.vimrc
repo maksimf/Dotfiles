@@ -33,9 +33,10 @@ let NERDTreeShowHidden=1
 let NERDTreeMinimalUI=1
 
 Plug 'kien/ctrlp.vim'
-let g:ctrlp_working_path_mode='c'
+let g:ctrlp_working_path_mode='ra'
 let g:ctrlp_show_hidden=1
 let g:ctrlp_open_new_file='r'
+let g:ctrlp_extensions = ['buffertag', 'tag', 'line', 'dir']
 
 Plug 'majutsushi/tagbar'
 
@@ -60,6 +61,8 @@ set cursorline
 set nu
 
 let NERDTreeIgnore = ['\.DS_Store$']
+
+set laststatus=2 " Always show status line
 " Backup
 set nobackup
 set noswapfile
