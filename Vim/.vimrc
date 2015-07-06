@@ -60,9 +60,13 @@ set cursorline
 
 set nu
 
-let NERDTreeIgnore = ['\.DS_Store$']
+let NERDTreeIgnore = ['\.DS_Store$', '\.git$', '\.idea$', '\.sass-cache$', '\.un\~$']
 
 set laststatus=2 " Always show status line
+
+set expandtab
+set tabstop=2
+set shiftwidth=2
 " Backup
 set nobackup
 set noswapfile
