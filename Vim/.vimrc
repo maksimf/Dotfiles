@@ -32,11 +32,7 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 let NERDTreeShowHidden=1
 let NERDTreeMinimalUI=1
 
-Plug 'kien/ctrlp.vim'
-let g:ctrlp_working_path_mode='ra'
-let g:ctrlp_show_hidden=1
-let g:ctrlp_open_new_file='r'
-let g:ctrlp_extensions = ['buffertag', 'tag', 'line', 'dir']
+Plug 'wincent/command-t'
 
 Plug 'majutsushi/tagbar'
 
