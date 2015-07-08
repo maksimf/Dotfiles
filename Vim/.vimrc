@@ -42,8 +42,11 @@ let g:syntastic_ruby_checkers = ['rubocop']
 
 Plug 'slim-template/vim-slim'
 Plug 'tpope/vim-rails'
+Plug 'kchmck/vim-coffee-script'
 
 Plug 'bronson/vim-trailing-whitespace'
+
+Plug 'ingydotnet/yaml-vim'
 
 call plug#end()
 " -----
