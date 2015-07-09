@@ -50,6 +50,8 @@ Plug 'ingydotnet/yaml-vim'
 
 Plug 'digitaltoad/vim-jade'
 
+Plug 'wavded/vim-stylus'
+
 call plug#end()
 " -----
 " /Plugins
