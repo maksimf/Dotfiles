@@ -48,6 +48,8 @@ Plug 'bronson/vim-trailing-whitespace'
 
 Plug 'ingydotnet/yaml-vim'
 
+Plug 'digitaltoad/vim-jade'
+
 call plug#end()
 " -----
 " /Plugins
