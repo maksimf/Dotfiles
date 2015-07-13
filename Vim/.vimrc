@@ -52,6 +52,8 @@ Plug 'digitaltoad/vim-jade'
 
 Plug 'wavded/vim-stylus'
 
+Plug 'scrooloose/nerdcommenter'
+
 call plug#end()
 " -----
 " /Plugins
