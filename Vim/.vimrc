@@ -52,6 +52,8 @@ Plug 'digitaltoad/vim-jade'
 
 Plug 'wavded/vim-stylus'
 
+Plug 'itchyny/lightline.vim'
+
 call plug#end()
 " -----
 " /Plugins
@@ -82,6 +84,9 @@ set noswapfile
 
 set undofile
 set undolevels=500
+
+let g:lightline = { 'colorscheme': 'gotham256' }
+
 " -----
 " /Options
 " -----
