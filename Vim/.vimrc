@@ -54,6 +54,8 @@ Plug 'wavded/vim-stylus'
 
 Plug 'itchyny/lightline.vim'
 
+Plug 'scrooloose/nerdcommenter'
+
 call plug#end()
 " -----
 " /Plugins
