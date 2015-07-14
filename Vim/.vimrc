@@ -54,7 +54,7 @@ Plug 'wavded/vim-stylus'
 
 Plug 'itchyny/lightline.vim'
 
-Plug 'scrooloose/nerdcommenter'
+Plug 'tpope/vim-commentary'
 
 call plug#end()
 " -----
@@ -88,6 +88,8 @@ set undofile
 set undolevels=500
 
 let g:lightline = { 'colorscheme': 'gotham256' }
+
+set noshowmode
 
 " -----
 " /Options
