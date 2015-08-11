@@ -22,9 +22,10 @@ let g:startify_list_order = [
 			\ ]
 let g:startify_bookmarks = [
 			\ '~/Code/Rambler/secretmag/frontend',
-			\ '~/Code/Rambler/secretmag/backend',
+			\ '~/Code/Rambler/secretmag/mate-secretmag',
 			\ '~/Code/Rambler/secretmag/ed-secretmag',
-			\ '~/Code/Germen',
+			\ '~/Code/Germen/germen_frontend',
+			\ '~/Code/Germen/germen_backend',
 			\ '~/Code/Sale-Monster'
 			\ ]
 " Navigation
