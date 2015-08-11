@@ -38,7 +38,6 @@ Plug 'majutsushi/tagbar'
 
 " Syntax
 Plug 'scrooloose/syntastic'
-let g:syntastic_ruby_checkers = ['rubocop']
 
 Plug 'slim-template/vim-slim'
 Plug 'tpope/vim-rails'
@@ -55,6 +54,8 @@ Plug 'wavded/vim-stylus'
 Plug 'itchyny/lightline.vim'
 
 Plug 'tpope/vim-commentary'
+
+Plug 'tpope/vim-surround'
 
 call plug#end()
 " -----
@@ -90,6 +91,12 @@ set undolevels=500
 let g:lightline = { 'colorscheme': 'gotham256' }
 
 set noshowmode
+
+set guioptions-=r
+
+set guioptions-=L
+
+set noantialias
 
 " -----
 " /Options
