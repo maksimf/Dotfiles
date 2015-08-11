@@ -98,6 +98,8 @@ set guioptions-=L
 
 set noantialias
 
+set clipboard=unnamed
+
 " -----
 " /Options
 " -----
