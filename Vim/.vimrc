@@ -93,6 +93,9 @@ let g:lightline = { 'colorscheme': 'gotham256' }
 
 set noshowmode
 
+" -----
+"  GUI
+" -----
 set guioptions-=r
 
 set guioptions-=L
@@ -100,6 +103,12 @@ set guioptions-=L
 set noantialias
 
 set clipboard=unnamed
+
+set guifont=Terminus\ (TTF):h18
+
+" -----
+"  /GUI
+" -----
 
 " -----
 " /Options
