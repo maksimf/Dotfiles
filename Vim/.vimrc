@@ -33,7 +33,7 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 let NERDTreeShowHidden=1
 let NERDTreeMinimalUI=1
 
-Plug 'wincent/command-t'
+Plug 'kien/ctrlp.vim'
 
 Plug 'majutsushi/tagbar'
 
@@ -125,3 +125,5 @@ imap <F5> <Esc>:NERDTreeToggle<cr>
 map <leader>fw :FixWhitespace<cr>
 
 map <leader>sc :SyntasticCheck<cr>
+
+map <leader>f :CtrlP<cr>
