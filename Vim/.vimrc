@@ -8,32 +8,26 @@ Plug 'whatyouhide/vim-gotham'
 
 Plug 'airblade/vim-gitgutter'
 
-" Fancy start screen
-Plug 'mhinz/vim-startify'
-let g:startify_list_order = [
-			\ ['Bookmarks'],
-			\ 'bookmarks',
-			\ ['Most recent files'],
-			\ 'files',
-			\ ['Most recent files from current directory'],
-			\ 'dir',
-			\ ['Sessions'],
-			\ 'sessions'
-			\ ]
-let g:startify_bookmarks = [
-			\ '~/Code/Rambler/secretmag/frontend',
-			\ '~/Code/Rambler/secretmag/mate-secretmag',
-			\ '~/Code/Rambler/secretmag/ed-secretmag',
-			\ '~/Code/Germen/germen_frontend',
-			\ '~/Code/Germen/germen_backend',
-			\ '~/Code/Sale-Monster'
-			\ ]
 " Navigation
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 let NERDTreeShowHidden=1
 let NERDTreeMinimalUI=1
 
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
+
+let g:ctrlp_working_path_mode = 'c'
+
+" Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
+if executable('ag')
+  " Use Ag over Grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+  " ag is fast enough that CtrlP doesn't need to cache
+  let g:ctrlp_use_caching = 0
+endif
 
 Plug 'majutsushi/tagbar'
 
@@ -106,6 +100,13 @@ set clipboard=unnamed
 
 set guifont=Terminus\ (TTF):h18
 
+" OpenLastFile
+autocmd VimEnter * nested if
+  \ argc() == 0 &&
+  \ bufname("%") == "" |
+  \   exe "normal! `0" |
+  \ endif
+
 " -----
 "  /GUI
 " -----
@@ -127,3 +128,4 @@ map <leader>fw :FixWhitespace<cr>
 map <leader>sc :SyntasticCheck<cr>
 
 map <leader>f :CtrlP<cr>
+map <leader>fr :CtrlPRoot<cr>

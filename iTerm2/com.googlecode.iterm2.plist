@@ -127,9 +127,9 @@
 	<key>NSWindow Frame com.apple.typography_panel_Monaco</key>
 	<string>560 695 260 88 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1920 1200 0 0 1920 1177 </string>
+	<string>1 10 1920 1160 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1923 -52 1914 1168 1920 -59 1920 1177 </string>
+	<string>-1919 60 1918 1056 -1920 59 1920 1057 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -845,7 +845,7 @@
 	<key>NoSyncTimeOfLastPromo</key>
 	<real>453631852.25874197</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>460636696.69437301</real>
+	<real>465897216.14112997</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -910,7 +910,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-08-06T11:24:46Z</date>
+	<date>2015-10-07T07:44:14Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -946,7 +946,7 @@
 	<key>WebKitDefaultFontSize</key>
 	<integer>11</integer>
 	<key>WebKitStandardFont</key>
-	<string>.Helvetica Neue DeskInterface</string>
+	<string>.AppleSystemUIFont</string>
 	<key>WindowNumber</key>
 	<true/>
 	<key>WindowStyle</key>
